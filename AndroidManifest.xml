@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Appable.Android.VoiceRecoder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+   	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+ 	<uses-feature android:name="android.hardware.camera" android:required="true"/>
+ 	<uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:hardwareAccelerated="true">
+        <activity
+            android:name="VoiceMain"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="liveStreaming.BroadCastStream" android:screenOrientation="portrait"></activity>
+        <activity android:name=".RecordnPlayBack.RecordnPlayBack" android:screenOrientation="portrait"></activity>
+        <activity android:name=".webbrowser.WebViewLogin" android:screenOrientation="portrait"></activity>
+        <activity android:name="iRadeoDemo.PlayList.PlayerListActivity"></activity>
+        <activity android:name="iRadeoDemo.AudioList.AudioFileActivity"></activity>
+        <activity android:name="iRadeoDemo.UploadFileActivity"></activity>
+        <activity android:name="pinterestDemo.PinterestActivity"></activity>
+        <activity android:name="com.opentok.OpenTokDemoActivity"></activity>
+        <activity android:name="com.opentok.controlbar.ControlBarActivity"></activity>
+        <activity android:name="com.opentok.helloworld.HelloWorldActivity"></activity>
+        <activity android:name="liveStreaming.AppableLiveStream"></activity>
+	</application>
+</manifest>

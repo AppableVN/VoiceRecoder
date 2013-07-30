@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceMain" >
+
+    <Button
+        android:id="@+id/btn_record_playback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Record-Play" />
+
+    <Button
+        android:id="@+id/btn_broadcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_record_playback"
+        android:layout_centerHorizontal="true"
+        android:text="Broadcast Voice" />
+
+    <Button
+        android:id="@+id/btn_pinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_broadcast"
+        android:layout_centerHorizontal="true"
+        android:text="Pinterest"/>
+
+    <Button
+        android:id="@+id/btn_livestream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_pinterest"
+        android:layout_centerHorizontal="true"
+        android:text="livestream" 
+        android:visibility="visible"/>
+    
+    <Button
+        android:id="@+id/btn_weblogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_livestream"
+        android:layout_centerHorizontal="true"
+        android:text="Web Login" />
+    
+    <Button
+        android:id="@+id/btn_iradeoplaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_weblogin"
+        android:layout_centerHorizontal="true"
+        android:text="iRadeo Playlist" />
+
+    <Button
+        android:id="@+id/btn_opentok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_iradeoplaylist"
+        android:layout_centerHorizontal="true"
+        android:text="OpenTok Demo"  
+        android:visibility="visible"/>
+    
+    <Button
+        android:id="@+id/btn_iradeoupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_opentok"
+        android:layout_centerHorizontal="true"
+        android:text="iRadeo Upload"  
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/btn_iradeodelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_iradeoupload"
+        android:layout_centerHorizontal="true"
+        android:text="iRadeo Delete"  
+        android:visibility="gone"/>
+</RelativeLayout>

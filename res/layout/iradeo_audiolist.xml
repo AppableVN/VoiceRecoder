@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceMain" 
+    android:background="@android:color/holo_green_dark">
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" 
+        android:layout_above="@+id/webBrowserView1">
+
+    </ListView>
+
+    <com.appable.androidlib.lightwebbrowser.WebBrowserView
+        android:id="@+id/webBrowserView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+    </com.appable.androidlib.lightwebbrowser.WebBrowserView>
+
+</RelativeLayout>
